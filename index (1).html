@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Health fitness survey form">
+
+  <title>Survey Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="group">
+    <header class="header">
+     <h2 id="title" class="text-center">Health fitness Survey form</h2>
+     <p id="description" class="description text-center">Thank you for filling this form </p>
+     </header>
+     <div class="survey">
+     <form id="survey-form" action="https://formspree.io/f/mgejgvdo" method="POST">
+       <div class="form-group">
+         <strong>
+           <label id="fname" for="fname">Name:</label>
+           <input type="text" name="fname" placeholder="Enter your name please" required>
+         </strong>
+         <br>
+         <strong>
+           <label for="Email">Email:</label>
+           <input type="email" name="email" placeholder="Enter your email please" required>
+         </strong>
+         <br>
+         <strong>
+           <label for="age">Age:
+           <input type="text" placeholder="Enter your age please" name="age" required>
+           </label>
+         </strong>
+         <br>
+         <strong>
+           <label for="phone-number">Phone Number:
+           <input type="tel" placeholder="Enter your phone number please" name="tel" required>
+           </label>
+         </strong>
+         <br>
+         <strong>
+           <label id="name" for="times-used">How will you describe your current fitness:
+            <select name="current fitness">
+           <option value="lactive"> Lightly active</option>
+           <option value="Active"> Active </option>
+           <option value="vactive"> Very Active</option>
+         </select>
+           </label>
+           </strong>
+            <br>
+            <strong>
+              <label for="activity">How many days do you exercise in a week:
+                <select name="e-Days">
+                  <option value="everyday"> Everyday</option>
+                  <option value="2 days">2 days </option>
+                  <option value="5 days"> 5 days</option>
+                </select>
+              </label>
+            </strong>
+             <br>
+             <strong>
+               <label for="e-type">What type of exercise do you enjoy:
+                 <select name="e-type">
+                   <option value="Yoga"> Yoga</option>
+                   <option value="skipping">Skipping </option>
+                   <option value="jogging"> Jogging </option>
+                 </select>
+               </label>
+             </strong>
+              <br>
+              <strong>
+                <label for="Diet">How will you describe your current nutrition habits:
+                  <select name="n-habits">
+                    <option value="balanced diet"> Balanced diet </option>
+                    <option value="anything"> I just dey chop anything to survive </option>
+                    <option value="garri"> Unbalanced (steady garri)</option>
+                  </select>
+                </label>
+              </strong>
+               <br>
+               <strong>
+                 <label for="sleep">How will you describe your current sleeping pattern:
+                   <select name="sleep">
+                    <option value="8hrs">8 hours daily</option>
+                     <option value="5hrs">5 hours daily </option>
+                     <option value="kerosene">Kerosene no dey sleep</option>
+                   </select>
+                 </label>
+               </strong>
+           <br>
+           <br>
+           <strong>
+             <label id='h-goal' for="h-goal">What are your Health Goals:
+             <select id="h-goal" multiple required name="h-goal">
+               <option value="weight">Weight loss</option>
+               <option value="muscle">Muscle gain</option>
+               <option value="stress">Stress Reduction</option>
+               <option value="overall">Overall well-being</option>
+             </select>
+             </label>
+           </strong>
+           <br>
+           
+          <p> Any suggestion</p>
+          <textarea id="ta" name="comments" placeholder="Type your suggestions here..."></textarea>
+          
+          <br>
+         
+          <br>
+          <button type="submit">Submit form</button>
+       </div>
+     </form>
+     </div>
+     <footer>
+      <h4 style="text-align: center" color="aqua">This survey is just for fun<h4>
+        &copy;&lt;ADEDEVguy/&gt; || 2023
+     </footer>
+  </div>
+</body>
+</html>
